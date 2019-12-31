@@ -2,7 +2,6 @@
 
 Spring Boot로 JWT Authentication 구현하기
 
----
 ```shell script
 # JWT 없이 GET 요청 날리기
 # 403 forbidden 에러가 발생한다
@@ -14,7 +13,7 @@ curl -H "Content-Type: application/json" -X POST -d '{
     "password": "password"
 }' http://localhost:8080/users/sign-up
 
-# appliation에 로그인 (JWT 발행)
+# application에 로그인 (JWT 발행)
 curl -i -H "Content-Type: application/json" -X POST -d '{
     "username": "admin",
     "password": "password"
